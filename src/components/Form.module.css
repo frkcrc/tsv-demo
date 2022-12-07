@@ -1,0 +1,30 @@
+.container {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 3px 3px #999;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Figtree', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  background-color: #111;
+  color: #ddd;
+
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  padding: 6px 12px;
+
+  box-shadow: 3px 3px #777;
+}
+
+button:active {
+  box-shadow: none;
+}

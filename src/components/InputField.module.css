@@ -1,0 +1,82 @@
+.group {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0px;
+  margin-bottom: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 40px; /* todo adapt for icon  -- on demnad? */
+
+  font-size: 18px;
+  font-family: 'Figtree', sans-serif;
+  
+  border: 1px solid black;
+  box-shadow: 3px 3px #777;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+input.valid {
+  border: 1px solid green; /* todo change color */
+}
+input.invalid {
+  border: 1px solid red; /* todo change color */
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+
+  animation: floatUp 0.2s;
+}
+
+@keyframes floatUp {
+  0% { font-size: 18px; top: 14px; }
+  100% { font-size: 12px; top: 3px; }
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+}
+
+.icon img {
+  width: 18px;
+  opacity: 0.3;
+}
+
+.icon .iconLoading {
+  animation: spinner infinite 1s linear;
+}
+
+@keyframes spinner {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Here's what we can do.
+   We have the label as normal placeholder, first.
+   Then when the value is not empty, we show another one.
+   Above the thing, inside the padding, positioned absolutely.
+*/
